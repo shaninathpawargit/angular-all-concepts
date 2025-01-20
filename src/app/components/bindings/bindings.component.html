@@ -1,0 +1,8 @@
+<div>
+    <h1 class="text-3xl flex justify-center items-center font-bold underline text-orange-800">Data Bindings</h1>
+    <label for="name">One Way Binding :</label> {{ oneWayBinding }} <br>
+
+    <label for="name">Two Way Binding :</label>
+    <input class="border-2 border-black rounded-md" type="text" id="name" name="name" [(ngModel)]="twoWayBinding">
+    <span> Updated from input field : {{ twoWayBinding }}</span>
+</div>
